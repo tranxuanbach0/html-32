@@ -1,15 +1,10 @@
 function addSubject() {
-    let input = document.getElementById("subjectInput");
-    let subjectName = input.value.trim();
-    if (subjectName === "") {
-        alert("Tên môn học không được để trống!");
-        return;
-}
+    let input = document.getElementById("subject");
+    let subjectName = input.value.trim(); 
+    if (!subjectName) return alert("Tên môn học không được để trống!");
 
-let list = document.getElementById("subjectList");
-let listItem = document.createElement("li");
-listItem.textContent = subjectName;
-
-list.appendChild(listItem);
-input.value = "";
+    let listItem = document.createElement("li");
+    listItem.textContent = subjectName; 
+    document.getElementById("subjectList").appendChild(listItem);
+    input.value = "";
 }
