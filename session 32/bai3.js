@@ -1,10 +1,8 @@
-function addSubject() {
+function addsubject() {
     let input = document.getElementById("subject");
-    let subjectName = input.value.trim(); 
-    if (!subjectName) return alert("Tên môn học không được để trống!");
-
-    let listItem = document.createElement("li");
-    listItem.textContent = subjectName; 
-    document.getElementById("subjectList").appendChild(listItem);
-    input.value = "";
+    let subjectname = input.value.trim(); 
+    if (!subjectname) return alert("Tên môn học không được để trống!");
+    let listitem = document.createElement("li");
+    listitem.textContent = subjectname; 
+    document.getElementById("subjectlist").appendChild(listitem);
 }
